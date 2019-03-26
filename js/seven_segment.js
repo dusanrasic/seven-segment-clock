@@ -3,18 +3,6 @@ let index = 0;
 
 function SevenSegment(val){
   this.index=val;
-  // console.log(val);
-
-  // setup = () => {
-  //   createCanvas(210, 300);
-  //   frameRate(3);
-  // }
-
-  // draw = () => {
-  //   background(0);
-  //   sevenSegment(nums[index]);
-  //   // index = (index + 1) % nums.length;
-  // }
 
   this.getColor = (val, shift) => {
     let r = 255;

@@ -28,12 +28,14 @@ function draw() {
 		root.splice(3, realDigits.length,new SevenSegment(element));
 	});
 	background(0);
+
 	for(var i=0; i < 2; i++) {
 		translate(i*150, 0);
 		root[i].sevenSegment(nums[root[i].index]);
 	}
 	translate(300, 0);
 	splitter.dots(nums[sec]);
+
 	for(var i=2; i < 4; i++) {
 		translate(i*50, 0);
 		root[i].sevenSegment(nums[root[i].index]);
