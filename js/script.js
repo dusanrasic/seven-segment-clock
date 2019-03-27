@@ -5,7 +5,8 @@ var root = [];
 
 
 function setup() {
-	createCanvas(900, 320);
+	var canvas = createCanvas(900, 320);
+	canvas.parent('wrapper');
 }
 
 function draw() {
@@ -41,3 +42,5 @@ function draw() {
 		root[i].sevenSegment(nums[root[i].index]);
 	}
 }
+
+
