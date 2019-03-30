@@ -16,9 +16,15 @@ body {
   transform-style: preserve-3d;
   perspective: 1600px;
   box-shadow: 0px 0px 18px 4px #333;
-  transform: scale3d(0.7, 0.7, 0.7) rotateY(-30deg) rotateX(-2deg);
+  transform: scale3d(0.7, 0.7, 0.7) rotateY(-35deg) rotateX(-2deg);
   -webkit-transform-origin: 50% 50% 0;
   perspective-origin: 50% -240px; }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    #wrapper {
+      transform: scale3d(0.7, 0.7, 0.7) rotateY(-35deg) rotateX(-2deg); } }
+  @media (max-width: 480px) {
+    #wrapper {
+      transform: scale3d(0.4, 0.4, 0.4) rotateY(-35deg) rotateX(-2deg); } }
   #wrapper:before {
     content: '';
     position: absolute;
